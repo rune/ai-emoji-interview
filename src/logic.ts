@@ -1,4 +1,4 @@
-import type { RuneClient } from "rune-sdk"
+import type { GameOverResult, PlayerId, RuneClient } from "rune-sdk"
 
 const QUESTION_TIMER = 20_000
 const END_TIMER = 60_000
@@ -143,7 +143,7 @@ Rune.initLogic({
     },
   },
   updatesPerSecond: 10,
-  update: ({ game }) => {
+  update: ({ game, allPlayerIds }) => {
     if (game.timerEndsAt !== 0 && game.timerEndsAt < Rune.gameTime()) {
       if (game.timerName === "question") {
         game.timerEndsAt = 0
@@ -170,7 +170,11 @@ Rune.initLogic({
         })
         game.round++
       } else if (game.timerName === "endgame") {
-        Rune.gameOver()
+        const options: Record<PlayerId, GameOverResult> = {}
+        for (const id of allPlayerIds) {
+          options[id] = game.winner === id ? "WON" : "LOST"
+        }
+        Rune.gameOver({ players: options })
       }
     }
   },
