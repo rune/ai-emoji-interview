@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>AI Emoji Interview</title>
+  </head>
+  <body>
+    <div id="page">
+      <div class="logo"></div>
+      <div id="startScreen" class="screen off">
+        <div class="entryText">Tap to start the game for everyone!</div>
+      </div>
+      <div id="questionScreen" class="screen enabled">
+        <div id="questionPanel">
+          <div id="jobName">Galactic Animal Whisperer</div>
+          <div id="questionText">
+            Ah, I see a natural approach here! You have a refreshing calmness
+            and a gentle presence, perfect for creatures with complex
+            sensitivities. Tell me, how would you approach building trust with
+            an alien species known for being cautious around new environments?
+          </div>
+          <div id="instructions">Enter 3 emojis to respond</div>
+        </div>
+        <div id="pickers">
+          <div id="picker1" class="picker"></div>
+          <div id="picker2" class="picker"></div>
+          <div id="picker3" class="picker"></div>
+        </div>
+        <div id="emojiPickerBackground">
+          <div id="emojiPicker"></div>
+        </div>
+        <div class="timer">
+          <div id="questionTimerBar" class="timerBar"></div>
+        </div>
+      </div>
+      <div id="thinkingScreen" class="screen off">
+        <div class="entryText">Interviewer is considering your answer...</div>
+      </div>
+      <div id="resultScreen" class="screen off">
+      <div id="resultPanel">
+        <div id="resultPanelTitle">🥳 Coke and Code got the job!</div>
+        <div id="resultPanelContent">
+          <div class="resultText">
+            Welcome to the interview! We’re hiring for a position with the
+            Intergalactic Animal Conservation Society. This role requires
+            connecting with rare and exotic creatures across the cosmos,
+            soothing them, and understanding their needs.
+          </div>
+          <div class="resultEmojis">🥝🌾🍧</div>
+          <div class="resultText">
+            Welcome to the interview! We’re hiring for a position with the
+            Intergalactic Animal Conservation Society. This role requires
+            connecting with rare and exotic creatures across the cosmos,
+            soothing them, and understanding their needs.
+          </div>
+          <div class="resultEmojis">🥝🌾🍧</div>
+          <div class="resultText">
+            Welcome to the interview! We’re hiring for a position with the
+            Intergalactic Animal Conservation Society. This role requires
+            connecting with rare and exotic creatures across the cosmos,
+            soothing them, and understanding their needs.
+          </div>
+          <div class="resultEmojis">🥝🌾🍧</div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/logic.ts"></script>
+    <script type="module" src="/src/client.ts"></script>
+  </body>
+</html>

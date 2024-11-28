@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Audio";
+  src: url(assets/Audiowide-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#emojiPickerBackground {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: none;
+}
+
+.emojiPicker {
+  transform: scale(75%,75%);
+}
+
+#emojiPicker {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+#page {
+  background-image: url(assets/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  background-image: url(assets/logo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  left: 5%;
+  top: 5%;
+}
+
+.entryText {
+  font-family: "Audio"; 
+  font-size: 3vh;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  text-align: center; 
+  color: white;
+}
+
+#questionText {
+  font-family: "Roboto";
+  font-size: 2.5vh;
+  color:white;
+}
+
+#questionPanel {
+  position: absolute;
+  width: 80%;
+  left: 5%;
+  background: rgba(0,0,0,0.7);
+  padding: 5%;
+  border-radius: 5%;
+  border: 1px solid #CBEAF4;
+
+  top: 20%;
+}
+
+#resultPanel {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 5%;
+  border: 1px solid #CBEAF4;
+  height: 70vh;
+  top: 20%;
+  overflow: hidden;
+}
+
+#resultPanelTitle {
+  background: #CBEAF4;
+  color: black;
+  font-size: 3.5vh;
+  padding: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-family: "Audio";
+}
+
+#resultPanelContent {
+  color: white;
+  padding: 3vh;
+  font-size: 2.5vh;
+  font-family: "Roboto"
+}
+
+.resultEmojis {
+  margin-top: 1vh;
+  font-size: 6vh;
+  margin-bottom: 2vh;
+  letter-spacing: 2vh;
+}
+
+#jobName {
+  margin-bottom: 2vh;
+  font-family: "Audio"; 
+  font-size: 3vh;
+  color: white;
+}
+
+#instructions {
+  margin-top: 2vh;
+  font-family: "Audio"; 
+  font-size: 3vh;
+  color: white;
+}
+
+#pickers {
+  position: absolute;
+  display: flex;
+  height: 20vh;
+  width: 100vw;
+  top: 70%;
+  justify-content: center;
+}
+
+.picker {
+  margin: 1vh;
+  height: 13vh;
+  width: 14vh;
+  border-radius: 2vh;
+  border-bottom: 1vh solid #cccc;
+  background: white;
+  font-size: 10vh;
+  text-align: center;
+}
+
+.timer {
+  width: 90%;
+  height: 5vh;
+  background: white;
+  position: absolute;
+  border-radius: 5vh;
+  bottom: 5vh;
+  left: 5%;
+  overflow: hidden;
+}
+
+.timerBar {
+  width: 50%;
+  background: #49C5BF;
+  height: 100%;
+}
+.screen {
+  opacity: 0
+}
+
+.enabled {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.off {
+  pointer-events: none;
+  opacity: 0;
+}
