@@ -112,11 +112,23 @@ body {
   font-family: "Audio";
 }
 
+::-webkit-scrollbar { 
+  background: rgba(255,255,255,0.3);
+  width: 2vw;
+}
+
+::-webkit-scrollbar-thumb { 
+  background: white;
+  width: 2vw;
+}
+
 #resultPanelContent {
   color: white;
   padding: 3vh;
   font-size: 2.5vh;
-  font-family: "Roboto"
+  font-family: "Roboto";
+  overflow-y: scroll;
+  height: 55vh;
 }
 
 .resultEmojis {
