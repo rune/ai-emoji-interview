@@ -1,7 +1,7 @@
 import type { GameOverResult, PlayerId, RuneClient } from "rune-sdk"
 
 const QUESTION_TIMER = 20_000
-const END_TIMER = 60_000
+const END_TIMER = 5_000
 
 export type AiMessage = {
   role: string
@@ -174,7 +174,7 @@ Rune.initLogic({
         for (const id of allPlayerIds) {
           options[id] = game.winner === id ? "WON" : "LOST"
         }
-        Rune.gameOver({ players: options })
+        Rune.gameOver({ players: options, minimizePopUp: true })
       }
     }
   },
