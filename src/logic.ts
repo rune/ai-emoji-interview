@@ -84,6 +84,10 @@ Rune.initLogic({
       conclusion: "",
     }
   },
+  events: {
+    playerJoined: () => {},
+    playerLeft: () => {},
+  },
   ai: {
     promptResponse: ({ response }, { game, allPlayerIds }) => {
       game.prompting = false
