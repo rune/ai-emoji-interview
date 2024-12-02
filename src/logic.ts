@@ -33,7 +33,7 @@ const PROMPT =
   "After you have received 3 inputs from each player you should pick the best applicant based on their responses and output it on a line starting with Winner:\n" +
   "You should also output a congratulations on getting the job message based on the last set of emojis on a line starting with Conclusion:\n" +
   "\n" +
-  "Example with only 2 inputs:\n" +
+  "Example:\n" +
   "\n" +
   "Job Title: Galactic Animal Whisperer\n" +
   "Intro: Welcome to the interview! We’re hiring for a position with the Intergalactic Animal Conservation Society. This role requires connecting with rare and exotic creatures across the cosmos, soothing them, and understanding their needs.\n" +
@@ -47,7 +47,9 @@ const PROMPT =
   "Player coke and code: 🧑‍🦱💂‍♀️🕵️\n" +
   "Player shane helm: 👳🏻‍♀️👨🏼‍🎨✌🏼\n" +
   "Winner: kev\n" +
-  "Conclusion: Congratulations kev and welcome to our team. I'm sure you'll be a fantastic additional to the animal whispering team!"
+  "Conclusion: Congratulations kev and welcome to our team. I'm sure you'll be a fantastic additional to the animal whispering team!" +
+  "\n" +
+  "You must also provide a winner and conclusion after you have provided answers twice."
 
 function startTimer(game: GameState, name: string, length: number) {
   game.timerName = name
