@@ -1,28 +1,5 @@
-# Getting Started with Rune
+# AI Emoji Interview - 7 AI Games in 7 days - Day 7 
 
-### `npm run dev`
+![ai-emoji-interview](https://github.com/user-attachments/assets/4a869ed3-6929-4c3b-8c7a-c1265eb5e56e)
 
-Runs the game in Dev UI.
-
-The page will reload when you make changes.
-
-### `npm run upload`
-
-Builds the game and starts upload process to Rune.
-
-### `npm run build`
-
-Builds the game. You can then upload it to Rune using `npx rune@latest upload`.
-
-### `npm run lint`
-
-Runs the validation rules. You can read about them in the [docs on server-side logic](https://developers.rune.ai/docs/advanced/server-side-logic).
-
-### `npm run typecheck`
-
-Verifies that TypeScript is valid.
-
-
-## Learn More
-
-See the [Rune docs](https://developers.rune.ai/docs/quick-start) for more info. You can also ask any questions in the [Rune Discord](https://discord.gg/rune-devs), we're happy to help!
+In the final game of the 7 days we wanted to try out how AI interprets emojis. The AI Emoji Interview game has the AI acting an interviewer for a made up and crazy job opportunity. Players must take part in the interview but can only provide emojis as answers. The AI interprets the emojis as answers and eventually selects a player to get the job. Switching from text to emoji speeds the game up and players can still to get their point across easily.
