@@ -140,10 +140,16 @@ Rune.initLogic({
             }
           }
           startTimer(game, "endgame", END_TIMER)
+          if (game.winner === "") {
+            game.winner = allPlayerIds[0]
+          }
         }
         if (line.startsWith("Conclusion:")) {
           game.conclusion = line.substring(line.indexOf(":") + 1).trim()
           startTimer(game, "endgame", QUESTION_TIMER)
+          if (game.winner === "") {
+            game.winner = allPlayerIds[0]
+          }
         }
       }
     },
